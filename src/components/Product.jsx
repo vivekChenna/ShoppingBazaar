@@ -25,14 +25,16 @@ const Product = ({ item }) => {
   };
 
   return (
-    <div className="max-w-[230px] border-2 mt-5 flex flex-col items-center shadow-lg rounded-3xl justify-evenly py-4">
-      <div className=" text-xl font-semibold tracking-wide">{newTitle}</div>
+    <div className="max-w-[230px] border-2 mt-5 flex flex-col items-center shadow-lg rounded-3xl justify-between py-4">
+      <div className=" text-xl font-bold tracking-wide font-sans">
+        {newTitle}
+      </div>
       <p className=" text-sm text-center text-gray-400">{desc}</p>
       <div>
         <img width={100} src={item.image} alt="product-img" />
       </div>
 
-      <p className="text-sm">{item.category}</p>
+      <p className="text-sm font-semibold font-mono ">{item.category}</p>
       <p className="text-sm font-bold ">${item.price}</p>
 
       <div className="flex justify-evenly w-full">

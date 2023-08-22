@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import EmptyCartImg from "../constants/EmptyCart.jpg";
 const EmptyCart = () => {
   return (
-    <div className=" h-screen w-screen flex flex-col items-center justify-center gap-3 overflow-hidden flex-wrap">
+    <div className=" h-[80vh] w-[100vw] flex flex-col items-center justify-center gap-3 flex-wrap">
       <img src={EmptyCartImg} width={300} alt="emptyCart" />
       <div>Cart Empty!</div>
       <NavLink to="/">

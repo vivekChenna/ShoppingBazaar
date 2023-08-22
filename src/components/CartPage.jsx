@@ -19,7 +19,7 @@ const CartPage = () => {
   return cart.length === 0 ? (
     <EmptyCart />
   ) : (
-    <div className="flex justify-evenly border-2 flex-wrap mx-auto">
+    <div className="flex justify-evenly flex-wrap mx-auto">
       <div className=" max-w-3xl flex flex-col gap-5  flex-wrap">
         {cart.map((item, index) => {
           return <CartItem key={item.id} itemIndex={index} item={item} />;

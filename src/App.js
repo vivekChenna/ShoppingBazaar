@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="text-2xl mb-8 overflow-x-hidden">
+    <div className="text-2xl mb-8 overflow-x-hidden overflow-y-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
