@@ -9,20 +9,19 @@ const Home = () => {
   const getProductData = async () => {
     const response = await fetch(API_URL);
     const data = await response.json();
-    console.log(data);
     setProductData(data);
   };
 
   useEffect(() => {
     getProductData();
-  });
+  }, []);
 
   return ProductData.length === 0 ? (
     <Spinner />
   ) : (
-    <div>
+    <div className="max-w-5xl flex flex-wrap mx-auto justify-evenly">
       {ProductData.map((item) => {
-        return <Product key={item.id} {...item} />;
+        return <Product key={item.id} item={item} />;
       })}
     </div>
   );
